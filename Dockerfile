@@ -3,10 +3,10 @@ MAINTAINER anjana.nandam@gmail.com
 RUN yum install -y httpd \
 zip \
 unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page281/ogistic.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page258/loxury.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip ogistic.zip
-RUN cp -rvf ogistic/* .
-RUN rm -rf ogistic ogistic.zip
+RUN unzip loxury.zip
+RUN cp -rvf loxury/* .
+RUN rm -rf loxury loxury.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
